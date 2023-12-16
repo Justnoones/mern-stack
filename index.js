@@ -1,19 +1,7 @@
-// doesn't work window & method that are meant for browsers
+const int_1 = 14;
+const int_2 = 16;
 
-// alert("Hello World")
-// document.write("Hello World")
-// window.document.addEventListener('click', e => {console.log(e.target)})
-
-let interval = global.setInterval(() => {
-    console.log("Hello World")
-}, 1000);
-
-global.setTimeout(() => {
-    console.log(__dirname)
-    console.log(__filename)
-    clearInterval(interval)
-}, 5000);
-
-document.addEventListener(e => {
-    console.log(e.target.value)
-})
+module.exports = {
+    int_1,
+    int_2
+};
